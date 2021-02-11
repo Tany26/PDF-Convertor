@@ -5,7 +5,7 @@ window.onload = function () {
             console.log(invoice);
             console.log(window);
             var opt = {
-                margin: 0.1,
+                margin: 0.5,
                 filename: 'sample file.pdf',
                 image: { type: 'png', quality: 0.98 },
                 html2canvas: { scale: 2 },

@@ -1,120 +1,167 @@
-div
-{
-    border-radius: 5px;
-    }
-#header
-{
-    position: fixed;
-    z-index: 1;
-    height:40px;
-    width: 70%;
-    background-color: #668284;
-    margin-bottom: 10px
-    }
 
-#name {
-    float:left;
-	margin-left: 20px;
-	padding-bottom: 10px;
-	font-size: 16px;
-	font-family: Verdana, sans-serif;
-	color: #ffffff;
+  
+body {
+    margin: 0;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.5385;
+    color: #333;
+    text-align: left;
+    background-color: #eee
 }
 
-#email{
-    float: right;
-    margin-right: 20px;
-	padding-bottom: 10px;
-	font-size: 16px;
-	font-family: Verdana, sans-serif;
-	color: #ffffff;
+.mt-50 {
+    margin-top: 50px
 }
 
-#contact
-{
-    margin-left:45%;
-    padding-bottom: 10px;
-	font-size: 16px;
-	font-family: Verdana, sans-serif;
-	color: #ffffff;
-    }
-
-a:hover {
-    font-weight: bold;
+.mb-50 {
+    margin-bottom: 50px
 }
 
-.right
-{
-    float: left;
-    margin-top: 50px;
-    padding-left:5px;
-    /*margin-right: -10px;
-    margin-left: 14%;*/
-    height: auto;
-    width: 99%;
-    background-color: #E3EDD8;
-    }
-
-/*.left
-{
-    float: left;
-    margin-top: 50px;
-    /*margin-right: -90px;
-    height: relative;
-    width: 10%;
-    background-color: #4160E8;
-    }*/
-    
-#footer
-{
-    height:40px;
-    clear:both;
+.card {
     position: relative;
-    background-color: #C1E3E1;
-    }
-    
-h3
-{
-    text-decoration: underline;
-    }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .1875rem
+}
 
-#job-responsibilities
-{
-    padding: 1px;
-    }
-.job-title
-{
-    font-weight: bold;
-    }
-table
-{
-    border: 1px dashed black;
-    }
-td
-{
-    padding: 2px;
-    border: 1px solid #E88741;
-    }
+.card-img-actions {
+    position: relative
+}
 
-#course-name
-{
-    font-weight:bold;
-    }
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    text-align: center
+}
 
-#company-name
-{
-    height:2px;
-    text-decoration:underline;
+.card-title {
+    margin-top: 10px;
+    font-size: 17px
+}
+
+.invoice-color {
+    color: red !important
+}
+
+.card-header {
+    padding: .9375rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, .02);
+    border-bottom: 1px solid rgba(0, 0, 0, .125)
+}
+
+a {
+    text-decoration: none !important
+}
+
+.btn-light {
+    color: #333;
+    background-color: #fafafa;
+    border-color: #ddd
+}
+
+.header-elements-inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap
+}
+
+@media (min-width: 768px) {
+    .wmin-md-400 {
+        min-width: 400px !important
     }
-#job-title
-{
-    height: 5px;
-    }
-.job-duration
-{
-    float:right;
-    }
-#heading
-{
-    font-weight:bold;
-    }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #2196f3
+}
+
+.btn-labeled>b {
+    position: absolute;
+    top: -1px;
+    background-color: blue;
+    display: block;
+    line-height: 1;
+    padding: .62503rem
+}
+
+
+
+
+.msg { padding: 10px; background: #222; position: relative; }
+.msg h1 { color: #fff;  }
+.msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
+.msg a:hover { background: #266400; }
+
+/* //-- yui-grids style overrides -- */
+body { font-family: Georgia; color: #444; }
+#inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
+.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
+
+/* //-- header, body, footer -- */
+#hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #ccc }
+#hd h2 { text-transform: uppercase; letter-spacing: 2px; }
+#bd, #ft { margin-bottom: 2em; }
+
+/* //-- footer -- */
+#ft { padding: 1em 0 5em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }
+#ft p { margin-bottom: 0; text-align: center;   }
+
+/* //-- core typography and style -- */
+#hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
+h2 { font-size: 152% }
+h3, h4 { font-size: 122%; }
+h1, h2, h3, h4 { color: #333; }
+p { font-size: 100%; line-height: 18px; padding-right: 3em; }
+a { color: #990003 }
+a:hover { text-decoration: none; }
+strong { font-weight: bold; }
+li { line-height: 24px; border-bottom: 1px solid #ccc; }
+p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
+p.enlarge span { color: #000 }
+.contact-info { margin-top: 7px; }
+.first h2 { font-style: italic; }
+.last { border-bottom: 0 }
+
+
+/* //-- section styles -- */
+
+a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
+a#pdf:hover { background: #222; }
+
+.job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
+.job h4 { position: absolute; top: 0.35em; right: 0 }
+.job p { margin: 0.75em 0 3em 0; }
+
+.last { border: none; }
+.skills-list {  }
+.skills-list ul { margin: 0; }
+.skills-list li { margin: 3px 0; padding: 3px 0; }
+.skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
+.talent { width: 32%; float: left }
+.talent h2 { margin-bottom: 6px; }
+
+#srt-ttab { margin-bottom: 100px; text-align: center;  }
+#srt-ttab img.last { margin-top: 20px }
+
+/* --// override to force 1/8th width grids -- */
+.yui-gf .yui-u{width:80.2%;}
+.yui-gf div.first{width:12.3%;}
+
+
